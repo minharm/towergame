@@ -34,9 +34,8 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir -p _site
-          cp frontend/tower-girl-mobile-game.html _site/
-          cp frontend/index.html _site/
-          cp -r frontend/widget _site/widget
+          cp frontend/index.html _site/index.html
+          cp frontend/tower-girl-mobile-game.html _site/tower-girl-mobile-game.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
